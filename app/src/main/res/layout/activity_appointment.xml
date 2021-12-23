@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Enter Date"
+                android:drawableRight="@drawable/ic_arrow_drop_down"/>
+
+            <com.github.jhonnyx2012.horizontalpicker.HorizontalPicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/editText1" />
+
+            <TextView
+                android:id="@+id/available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/available_time"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/datePicker" />
+
+            <Spinner
+                android:id="@+id/edit_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#EEEEEE"
+                android:focusable="false"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/available"/>
+
+            <TextView
+                android:id="@+id/patient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/patient"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/available" />
+
+            <TextView
+                android:id="@+id/appointment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appointment_name"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/available" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#EEEEEE"
+                android:hint="@string/patient_name"
+                android:padding="15dp"
+                android:textSize="15sp"
+                android:textColorHint="#000" />
+
+            <TextView
+                android:id="@+id/appointment_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appointment_age"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/edit_name" />
+
+            <Spinner
+                android:id="@+id/edit_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#EEEEEE"
+                android:focusable="false"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/appointment_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appointment_gender"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/edit_age" />
+
+            <Spinner
+                android:id="@+id/edit_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#EEEEEE"
+                android:focusable="false"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/appointment_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appointment_problem"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/edit_gender" />
+
+            <EditText
+                android:id="@+id/edit_problem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="#EEEEEE"
+                android:gravity="top|left"
+                android:hint="@string/patient_problem"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:padding="15dp"
+                android:textSize="15sp"
+                android:textColorHint="#000" />
+
+            <Button
+                android:id="@+id/appointment_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:backgroundTint="#3E64FF"
+                android:text="@string/set_appointment"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:bottomRightRadius="30dp"
+                android:bottomLeftRadius="30dp"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="30dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

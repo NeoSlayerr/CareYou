@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">CareYou</string>
+    <string name="register">New here? <b><a href="">Register</a></b></string>
+    <string name="alreadyMember">Already member? <b><a href="">Login</a></b></string>
+    <string name="haveacc">Have Account? <b><a href="">Login Now !</a></b></string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="hint_pick_up_date">dd/mm/yyyy</string>
+
+    <string name="available_time">Available Time</string>
+
+    <string name="patient">Patient Details</string>
+
+    <string name="patient_name">Enter Your Name Here</string>
+
+    <string name="appointment_name">Full Name</string>
+
+    <string name="appointment_age">Age</string>
+
+    <string name="patient_age">26-100</string>
+
+    <string name="appointment_gender">Gender</string>
+
+    <string name="patient_gender">Male/Female</string>
+
+    <string name="appointment_problem">Write your problem</string>
+
+    <string name="patient_problem">Write your problem here</string>
+
+    <string name="set_appointment">Set Appointment</string>
+
+    <string name="schedule_detail">Schedule Details</string>
+
+    <string name="no_appointment">You have no appointment on this date</string>
+</resources>

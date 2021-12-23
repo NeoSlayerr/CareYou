@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Enter Date" />
+
+            <com.github.jhonnyx2012.horizontalpicker.HorizontalPicker
+                android:id="@+id/datePickerSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/editText1" />
+
+            <TextView
+                android:id="@+id/schedule_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/schedule_detail"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/edit_gender" />
+
+            <TextView
+                android:id="@+id/schedule_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp"
+                android:background="#EEEEEE"
+                android:gravity="top|left"
+                android:hint="@string/no_appointment"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:padding="15dp"
+                android:textColorHint="#000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/data1"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:background="#EEEEEE"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Patient Name               :              ">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/patient_name"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Loading...">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Age                                 :              ">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/age"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Loading...">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Gender                           :              ">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gender"
+                        android:padding="5dp"
+                        android:text="Loading...">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Problem                         :              ">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/problem"
+                        android:padding="5dp"
+                        android:text="Loading...">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:visibility="visible"
+                android:id="@+id/doctor"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/doctor_name"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/date"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/time"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

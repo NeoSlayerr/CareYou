@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/drawable-v24/rounded_blue.xml" value="0.3880208333333333" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/drawable/rounded_corner.xml" value="0.382051282051282" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/drawable/rounded_grey.xml" value="0.3880208333333333" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/drawable/rounded_profile.xml" value="0.382051282051282" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/drawable/rounded_white.xml" value="0.382051282051282" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_after_forget_password.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_appointment.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_doctor_profile.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_doctors.xml" value="0.33" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_editprofile.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_forget_passoword.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_forget_password.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_home.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_login.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_main.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_profile.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/doctor_profile.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/layout/grid_item.xml" value="0.33" />
+        <entry key="..\:/Android Studio Project/Kalkulator Sederhana/app/src/main/res/menu/search_menu.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/drawable/ic_arrow_drop_down.xml" value="0.382051282051282" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_after_forget_password.xml" value="0.3546195652173913" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_appointment.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_doctor_profile.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_doctors.xml" value="0.33" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_editprofile.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_forget_password.xml" value="0.3546195652173913" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_home.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_login.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_main.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_profile.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_schedule.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/activity_success.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/grid_item.xml" value="1.0" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/spinner_dropdown.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/layout/spinner_text.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/menu/menu_popup.xml" value="0.371875" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.382051282051282" />
+        <entry key="..\:/Android Studio Project/ProyekPKB/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22552083333333334" />
+        <entry key="..\:/Android Studio Project/app/src/main/res/layout/activity_main.xml" value="0.29347826086956524" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

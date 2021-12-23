@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="95dp"
+                android:layout_toStartOf="@+id/title"
+                android:background="@drawable/back" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Doctors"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/filters"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="95dp"
+                android:layout_toEndOf="@+id/title"
+                android:src="@drawable/filter" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/list_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/item_search"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintVertical_bias="0.16"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speciality Filters :"
+                android:textSize="15dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/doctors">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/one"
+                    android:layout_height="50dp"
+                    android:text="Dentistry">
+
+                </CheckBox>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/two"
+                    android:layout_height="50dp"
+                    android:text="Neurology">
+
+                </CheckBox>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/three"
+                    android:layout_height="50dp"
+                    android:text="Genetics">
+                </CheckBox>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/four"
+                    android:layout_height="50dp"
+                    android:text="Surgery">
+                </CheckBox>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/btnsend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_white"
+                    android:paddingHorizontal="25dp"
+                    android:paddingVertical="14dp"
+                    android:text="Set Filter"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/item_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_grey"
+        android:drawableStart="@drawable/search"
+        android:hint="  Search for doctors"
+        android:iconifiedByDefault="false"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:queryHint="Search for doctors"
+        android:textColorHint="#6B779A"
+        android:title="Cari"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:layout_constraintBottom_toTopOf="@id/gridView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_filter"
+        app:layout_constraintVertical_bias="1.0"
+        app:showAsAction="always|collapseActionView" />
+
+    <LinearLayout
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_search">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:horizontalSpacing="-20dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="2"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:background="@drawable/bg_doctor">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/back"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/bell" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profil"
+            android:layout_centerHorizontal="true"
+            android:text="Username"
+            android:textColor="#222B45"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Full Name"
+            android:textColor="#6B779A"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Profile"
+            android:textColor="#222B45"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Fulll Name"
+            android:textColor="#6B779A"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/fullname"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_profile"
+            android:hint="Nama Lengkap"
+            android:paddingVertical="9dp"
+            android:paddingStart="10dp"
+            android:textColor="#222B45"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_name"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Gender"
+            android:textColor="#6B779A"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/input_gender"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/gender"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_profile"
+            android:hint="Jenis Kelamin"
+            android:paddingVertical="9dp"
+            android:paddingStart="10dp"
+            android:textColor="#222B45"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_gender"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Age"
+            android:textColor="#6B779A"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/input_age"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/age"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_profile"
+            android:hint="Umur"
+            android:paddingVertical="9dp"
+            android:paddingStart="10dp"
+            android:textColor="#222B45"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/input_age"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_blue"
+            android:paddingHorizontal="138dp"
+            android:paddingVertical="13dp"
+            android:text="Save Profile"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</LinearLayout>
